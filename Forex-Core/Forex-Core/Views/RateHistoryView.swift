@@ -8,9 +8,9 @@
 
 import UIKit
 
-class RateHistoryView: UIView {
+public class RateHistoryView: UIView {
     
-    override func draw(_ rect: CGRect) {
+    override public func draw(_ rect: CGRect) {
         let path = UIBezierPath()
         if let first = exchangeRates.first {
             path.move(to: point(for: first))
@@ -47,7 +47,7 @@ class RateHistoryView: UIView {
         return CGPoint(x: xPosition, y: yPosition)
     }
     
-    var exchangeRates = [ExchangeRate]() {
+   public var exchangeRates = [ExchangeRate]() {
         didSet {
             self.exchangeRates = exchangeRates.sorted { $0.date < $1.date }
             setNeedsDisplay(bounds)

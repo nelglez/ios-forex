@@ -15,6 +15,20 @@ public class ExchangeRateFetcher {
         case noData
         case invalidURL
     }
+   
+    /*
+     
+ Private - Only accessible to the class/data type
+ Fileprivate - Accessible to anything inside a file. Dont use it lol.
+ Internal - Accessible to anything in the same target.
+ Public - Accessible to anything in any target. In the same Xcode project
+ Open - Like public but are able to create subclasses of other targets classes.
+     
+ */
+    
+   public init() {
+        
+    }
     
     public func fetchCurrentExchangeRate(for symbol: String,
                                          base: String = "USD",

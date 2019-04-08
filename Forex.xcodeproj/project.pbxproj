@@ -7,46 +7,142 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7A176003225BA9D800E94869 /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A176002225BA9D800E94869 /* NotificationCenter.framework */; };
+		7A176006225BA9D800E94869 /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A176005225BA9D800E94869 /* TodayViewController.swift */; };
+		7A176009225BA9D800E94869 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7A176007225BA9D800E94869 /* MainInterface.storyboard */; };
+		7A17600D225BA9D800E94869 /* ForexWidget.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 7A176000225BA9D800E94869 /* ForexWidget.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		7A17602D225BAEDF00E94869 /* Forex_Core.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A17602C225BAE8D00E94869 /* Forex_Core.framework */; };
+		7A17602E225BAEDF00E94869 /* Forex_Core.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7A17602C225BAE8D00E94869 /* Forex_Core.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		9D1EB744217D81FF00982AFC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D1EB743217D81FF00982AFC /* AppDelegate.swift */; };
 		9D1EB749217D81FF00982AFC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D1EB747217D81FF00982AFC /* Main.storyboard */; };
 		9D1EB74B217D820300982AFC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9D1EB74A217D820300982AFC /* Assets.xcassets */; };
 		9D1EB74E217D820300982AFC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D1EB74C217D820300982AFC /* LaunchScreen.storyboard */; };
-		9D1EB756217D821400982AFC /* ExchangeRate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D1EB755217D821400982AFC /* ExchangeRate.swift */; };
-		9D1EB758217D853F00982AFC /* ExchangeRateFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D1EB757217D853F00982AFC /* ExchangeRateFetcher.swift */; };
-		9D1EB75A217D8BF600982AFC /* RateHistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D1EB759217D8BF600982AFC /* RateHistoryView.swift */; };
 		9D1EB75C217DA1DD00982AFC /* ExchangeRateDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D1EB75B217DA1DD00982AFC /* ExchangeRateDetailViewController.swift */; };
 		9D1EB763217DA27100982AFC /* SymbolsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D1EB762217DA27100982AFC /* SymbolsTableViewController.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		7A17600B225BA9D800E94869 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9D1EB738217D81FF00982AFC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7A175FFF225BA9D800E94869;
+			remoteInfo = ForexWidget;
+		};
+		7A17602B225BAE8D00E94869 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7A176027225BAE8C00E94869 /* Forex-Core.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 7A17601C225BAE3600E94869;
+			remoteInfo = "Forex-Core";
+		};
+		7A17602F225BAEDF00E94869 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7A176027225BAE8C00E94869 /* Forex-Core.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 7A17601B225BAE3600E94869;
+			remoteInfo = "Forex-Core";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		7A176011225BA9D800E94869 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				7A17600D225BA9D800E94869 /* ForexWidget.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7A176031225BAEE000E94869 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				7A17602E225BAEDF00E94869 /* Forex_Core.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		7A176000225BA9D800E94869 /* ForexWidget.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = ForexWidget.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		7A176002225BA9D800E94869 /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
+		7A176005225BA9D800E94869 /* TodayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayViewController.swift; sourceTree = "<group>"; };
+		7A176008225BA9D800E94869 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		7A17600A225BA9D800E94869 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7A176027225BAE8C00E94869 /* Forex-Core.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = "Forex-Core.xcodeproj"; path = "Forex-Core/Forex-Core.xcodeproj"; sourceTree = "<group>"; };
+		7A17604A225BC3CB00E94869 /* Forex.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Forex.entitlements; sourceTree = "<group>"; };
+		7A17604B225BC5BC00E94869 /* ForexWidget.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ForexWidget.entitlements; sourceTree = "<group>"; };
 		9D1EB740217D81FF00982AFC /* Forex.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Forex.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D1EB743217D81FF00982AFC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9D1EB748217D81FF00982AFC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9D1EB74A217D820300982AFC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9D1EB74D217D820300982AFC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9D1EB74F217D820300982AFC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		9D1EB755217D821400982AFC /* ExchangeRate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeRate.swift; sourceTree = "<group>"; };
-		9D1EB757217D853F00982AFC /* ExchangeRateFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeRateFetcher.swift; sourceTree = "<group>"; };
-		9D1EB759217D8BF600982AFC /* RateHistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RateHistoryView.swift; sourceTree = "<group>"; };
 		9D1EB75B217DA1DD00982AFC /* ExchangeRateDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExchangeRateDetailViewController.swift; sourceTree = "<group>"; };
 		9D1EB762217DA27100982AFC /* SymbolsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SymbolsTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		7A175FFD225BA9D800E94869 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7A176003225BA9D800E94869 /* NotificationCenter.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		9D1EB73D217D81FF00982AFC /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7A17602D225BAEDF00E94869 /* Forex_Core.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7A176001225BA9D800E94869 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7A176027225BAE8C00E94869 /* Forex-Core.xcodeproj */,
+				7A176002225BA9D800E94869 /* NotificationCenter.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7A176004225BA9D800E94869 /* ForexWidget */ = {
+			isa = PBXGroup;
+			children = (
+				7A17604B225BC5BC00E94869 /* ForexWidget.entitlements */,
+				7A176005225BA9D800E94869 /* TodayViewController.swift */,
+				7A176007225BA9D800E94869 /* MainInterface.storyboard */,
+				7A17600A225BA9D800E94869 /* Info.plist */,
+			);
+			path = ForexWidget;
+			sourceTree = "<group>";
+		};
+		7A176028225BAE8C00E94869 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7A17602C225BAE8D00E94869 /* Forex_Core.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		9D1EB737217D81FF00982AFC = {
 			isa = PBXGroup;
 			children = (
 				9D1EB742217D81FF00982AFC /* Forex */,
+				7A176004225BA9D800E94869 /* ForexWidget */,
+				7A176001225BA9D800E94869 /* Frameworks */,
 				9D1EB741217D81FF00982AFC /* Products */,
 			);
 			sourceTree = "<group>";
@@ -55,6 +151,7 @@
 			isa = PBXGroup;
 			children = (
 				9D1EB740217D81FF00982AFC /* Forex.app */,
+				7A176000225BA9D800E94869 /* ForexWidget.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -62,11 +159,9 @@
 		9D1EB742217D81FF00982AFC /* Forex */ = {
 			isa = PBXGroup;
 			children = (
+				7A17604A225BC3CB00E94869 /* Forex.entitlements */,
 				9D1EB743217D81FF00982AFC /* AppDelegate.swift */,
-				9D1EB75E217DA1EF00982AFC /* Model */,
-				9D1EB75F217DA1FC00982AFC /* Networking */,
 				9D1EB760217DA20300982AFC /* View Controllers */,
-				9D1EB761217DA20B00982AFC /* Views */,
 				9D1EB75D217DA1E300982AFC /* Resources */,
 			);
 			path = Forex;
@@ -83,22 +178,6 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
-		9D1EB75E217DA1EF00982AFC /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				9D1EB755217D821400982AFC /* ExchangeRate.swift */,
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		9D1EB75F217DA1FC00982AFC /* Networking */ = {
-			isa = PBXGroup;
-			children = (
-				9D1EB757217D853F00982AFC /* ExchangeRateFetcher.swift */,
-			);
-			path = Networking;
-			sourceTree = "<group>";
-		};
 		9D1EB760217DA20300982AFC /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
@@ -108,17 +187,26 @@
 			path = "View Controllers";
 			sourceTree = "<group>";
 		};
-		9D1EB761217DA20B00982AFC /* Views */ = {
-			isa = PBXGroup;
-			children = (
-				9D1EB759217D8BF600982AFC /* RateHistoryView.swift */,
-			);
-			path = Views;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		7A175FFF225BA9D800E94869 /* ForexWidget */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7A17600E225BA9D800E94869 /* Build configuration list for PBXNativeTarget "ForexWidget" */;
+			buildPhases = (
+				7A175FFC225BA9D800E94869 /* Sources */,
+				7A175FFD225BA9D800E94869 /* Frameworks */,
+				7A175FFE225BA9D800E94869 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ForexWidget;
+			productName = ForexWidget;
+			productReference = 7A176000225BA9D800E94869 /* ForexWidget.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 		9D1EB73F217D81FF00982AFC /* Forex */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9D1EB752217D820300982AFC /* Build configuration list for PBXNativeTarget "Forex" */;
@@ -126,10 +214,14 @@
 				9D1EB73C217D81FF00982AFC /* Sources */,
 				9D1EB73D217D81FF00982AFC /* Frameworks */,
 				9D1EB73E217D81FF00982AFC /* Resources */,
+				7A176011225BA9D800E94869 /* Embed App Extensions */,
+				7A176031225BAEE000E94869 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				7A17600C225BA9D800E94869 /* PBXTargetDependency */,
+				7A176030225BAEDF00E94869 /* PBXTargetDependency */,
 			);
 			name = Forex;
 			productName = Forex;
@@ -142,13 +234,26 @@
 		9D1EB738217D81FF00982AFC /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1000;
+				LastSwiftUpdateCheck = 1020;
 				LastUpgradeCheck = 1000;
 				ORGANIZATIONNAME = "Lambda School";
 				TargetAttributes = {
+					7A175FFF225BA9D800E94869 = {
+						CreatedOnToolsVersion = 10.2;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
+					};
 					9D1EB73F217D81FF00982AFC = {
 						CreatedOnToolsVersion = 10.0;
 						LastSwiftMigration = 1020;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -163,14 +268,39 @@
 			mainGroup = 9D1EB737217D81FF00982AFC;
 			productRefGroup = 9D1EB741217D81FF00982AFC /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 7A176028225BAE8C00E94869 /* Products */;
+					ProjectRef = 7A176027225BAE8C00E94869 /* Forex-Core.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				9D1EB73F217D81FF00982AFC /* Forex */,
+				7A175FFF225BA9D800E94869 /* ForexWidget */,
 			);
 		};
 /* End PBXProject section */
 
+/* Begin PBXReferenceProxy section */
+		7A17602C225BAE8D00E94869 /* Forex_Core.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Forex_Core.framework;
+			remoteRef = 7A17602B225BAE8D00E94869 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
 /* Begin PBXResourcesBuildPhase section */
+		7A175FFE225BA9D800E94869 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7A176009225BA9D800E94869 /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		9D1EB73E217D81FF00982AFC /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -184,14 +314,19 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		7A175FFC225BA9D800E94869 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7A176006225BA9D800E94869 /* TodayViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		9D1EB73C217D81FF00982AFC /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9D1EB758217D853F00982AFC /* ExchangeRateFetcher.swift in Sources */,
-				9D1EB75A217D8BF600982AFC /* RateHistoryView.swift in Sources */,
 				9D1EB763217DA27100982AFC /* SymbolsTableViewController.swift in Sources */,
-				9D1EB756217D821400982AFC /* ExchangeRate.swift in Sources */,
 				9D1EB75C217DA1DD00982AFC /* ExchangeRateDetailViewController.swift in Sources */,
 				9D1EB744217D81FF00982AFC /* AppDelegate.swift in Sources */,
 			);
@@ -199,7 +334,28 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		7A17600C225BA9D800E94869 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7A175FFF225BA9D800E94869 /* ForexWidget */;
+			targetProxy = 7A17600B225BA9D800E94869 /* PBXContainerItemProxy */;
+		};
+		7A176030225BAEDF00E94869 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Forex-Core";
+			targetProxy = 7A17602F225BAEDF00E94869 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin PBXVariantGroup section */
+		7A176007225BA9D800E94869 /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7A176008225BA9D800E94869 /* Base */,
+			);
+			name = MainInterface.storyboard;
+			sourceTree = "<group>";
+		};
 		9D1EB747217D81FF00982AFC /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -219,6 +375,50 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		7A17600F225BA9D800E94869 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = NO;
+				CODE_SIGN_ENTITLEMENTS = ForexWidget/ForexWidget.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ZD9LN99SX6;
+				INFOPLIST_FILE = ForexWidget/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.nelsongonzalez.Forex.ForexWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7A176010225BA9D800E94869 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = NO;
+				CODE_SIGN_ENTITLEMENTS = ForexWidget/ForexWidget.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ZD9LN99SX6;
+				INFOPLIST_FILE = ForexWidget/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.nelsongonzalez.Forex.ForexWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		9D1EB750217D820300982AFC /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -338,15 +538,17 @@
 		9D1EB753217D820300982AFC /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Forex/Forex.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = VXUQXR6S56;
+				DEVELOPMENT_TEAM = ZD9LN99SX6;
 				INFOPLIST_FILE = "$(SRCROOT)/Forex/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.lambdaschool.Forex;
+				PRODUCT_BUNDLE_IDENTIFIER = com.nelsongonzalez.Forex;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -356,15 +558,17 @@
 		9D1EB754217D820300982AFC /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Forex/Forex.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = VXUQXR6S56;
+				DEVELOPMENT_TEAM = ZD9LN99SX6;
 				INFOPLIST_FILE = "$(SRCROOT)/Forex/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.lambdaschool.Forex;
+				PRODUCT_BUNDLE_IDENTIFIER = com.nelsongonzalez.Forex;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -374,6 +578,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		7A17600E225BA9D800E94869 /* Build configuration list for PBXNativeTarget "ForexWidget" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7A17600F225BA9D800E94869 /* Debug */,
+				7A176010225BA9D800E94869 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		9D1EB73B217D81FF00982AFC /* Build configuration list for PBXProject "Forex" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

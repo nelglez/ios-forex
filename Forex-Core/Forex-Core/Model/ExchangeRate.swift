@@ -9,8 +9,8 @@
 import Foundation
 
 public struct ExchangeRate {
-    var symbol: String
-    var date: Date
-    var rate: Double
-    var base: String
+    public var symbol: String
+    public var date: Date
+    public var rate: Double
+    public var base: String
 }
